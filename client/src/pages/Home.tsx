@@ -75,7 +75,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-16">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-16 bg-gradient-to-br from-[#6B4C9A] to-[#1A1A1A]">
         {/* Spiral Animation Background */}
         <div className="absolute inset-0 z-0">
           <SpiralAnimation />
@@ -86,9 +86,9 @@ export default function Home() {
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663385951370/BWzvzfdPPTqeGk93hwi5jz/hero-dance-studio-FhwXCj4EiezedCeBBXHx6x.png"
             alt="Dance Studio"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
         {/* Hero Content */}
@@ -217,14 +217,14 @@ export default function Home() {
             {/* Google Maps */}
             <div className="rounded-lg overflow-hidden shadow-lg h-96">
               <MapView
-                initialCenter={{ lat: 34.6749, lng: 33.0388 }}
-                initialZoom={15}
+                initialCenter={{ lat: 34.700245, lng: 33.0472292 }}
+                initialZoom={16}
                 onMapReady={(map: google.maps.Map) => {
                   // Add marker for the dance studio location
                   new google.maps.marker.AdvancedMarkerElement({
                     map,
-                    position: { lat: 34.6749, lng: 33.0388 },
-                    title: 'House of Dance Strofes',
+                    position: { lat: 34.700245, lng: 33.0472292 },
+                    title: 'House of Dance Strofes - Karpenisiou 23',
                   });
                 }}
               />
